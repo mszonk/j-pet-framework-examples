@@ -91,6 +91,7 @@ bool TimeCalibration::init()
       CAlCor[i] = CAlTmp[i];
       CBlCor[i] = CBlTmp[i];
       std::cout <<"Iteration: "<<Niter<<", CONSTANTS: "<<CAtCor[i]<<" "<<CBtCor[i]<<" " <<CAlCor[i]<<" "<<CBlCor[i]<<std::endl;
+      INFO("Iteration: "+std::to_string(Niter)+", CONSTANTS: "+std::to_string(CAtCor[i])+", "+std::to_string(CBtCor[i])+", "+std::to_string(CAlCor[i])+", "+std::to_string(CBlCor[i]));
     }
   }
   createHistograms();
